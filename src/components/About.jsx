@@ -38,7 +38,7 @@ const About = () => {
             return (
               <div className={styles.item} key={index} data-aos={item.dir}>
                 <i>
-                  <Image src={`/images/${item.img}`} width={100} height={109} />
+                  <Image src={`/images/${item.img}`} width={100} height={109} alt="иконка" />
                 </i>
                 <h3>{item.title}</h3>
                 {item.text.map((text, index) => (

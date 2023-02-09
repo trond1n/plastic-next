@@ -18,7 +18,7 @@ const Banner = () => {
         <div className={styles.items}>
           {items.map((item, index) => (
             <div key={index} className={styles.item}>
-              <Image src={`/images/${item.imgPath}`} width={58} height={46} />
+              <Image src={`/images/${item.imgPath}`} width={58} height={46} alt="иконка" />
               <p>{item.text}</p>
             </div>
           ))}

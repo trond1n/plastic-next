@@ -6,14 +6,14 @@ const Header = () => {
     <div className={styles.contacts}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <Image src="/images/logo.png" width={70} height={70} />
+          <Image src="/images/logo.png" width={70} height={70} alt="иконка" />
           <h1>PLAST</h1>
         </div>
         <div className={styles.feedback}>
           <p>Свяжитесь с нами:</p>
 
           <ul>
-            <Image src="/images/phone.png" width={23} height={23} />
+            <Image src="/images/phone.png" width={23} height={23} alt="иконка" />
 
             <li>(8452) 32-01-05 </li>
             <li>(8452) 25-11-85</li>

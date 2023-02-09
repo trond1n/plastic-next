@@ -31,7 +31,7 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.info}>
-          <h3>OOO "Opтопласт", 2023</h3>
+          <h3>OOO Opтопласт, 2023</h3>
           <p>Создание и продвижение сайтов</p>
         </div>
       </div>
