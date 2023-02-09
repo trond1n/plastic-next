@@ -1,0 +1,31 @@
+.footer {
+  padding: 30px 0;
+
+  .container {
+    ul {
+      margin: 0 40px;
+      li {
+        list-style: none;
+        margin-bottom: 10px;
+      }
+    }
+    margin: auto;
+    width: 60%;
+
+    .lists {
+      display: flex;
+      justify-content: space-between;
+      .links {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .info {
+      margin: 40px 40px;
+      display: flex;
+      border-top: 1px solid #000;
+      padding-top: 10px;
+      justify-content: space-around;
+    }
+  }
+}
