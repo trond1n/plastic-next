@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import Navbar from './Navbar';
 import Sticky from 'react-stickynode';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Layout = ({ children }) => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <Header />
