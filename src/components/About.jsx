@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className={styles.about}>
       <div className={styles.container}>
-        <BlockTitle title={`О предприятии "ОРТОПЛАСТ"`} />
+        <BlockTitle title={`О предприятии ОРТОПЛАСТ`} />
         <div className={styles.content}>
           {/* <Image src="/images/logo.png" width={70} height={70} alt="иконка" /> */}
 
