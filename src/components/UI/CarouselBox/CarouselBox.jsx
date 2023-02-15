@@ -32,7 +32,6 @@ const data = [
   },
 ];
 const CarouselBox = () => {
-  const [defaultImage, setDefaultImage] = useState({});
   const settings = {
     dots: true,
     infinite: false,
@@ -75,7 +74,7 @@ const CarouselBox = () => {
         {data.map((i) => {
           return (
             <div key={i.id} className={styles.card}>
-              <Image src={i.image} width={280} height={158} />
+              <Image src={i.image} width={280} height={158} alt="pikcha" />
               <a>{i.title}</a>
             </div>
           );
