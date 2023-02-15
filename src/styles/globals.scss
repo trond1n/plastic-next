@@ -34,3 +34,21 @@ a {
 .aos-init[data-aos][data-aos].aos-animate {
   transform: unset;
 }
+.slick-slide {
+  max-width: 290px !important;
+  margin: 0;
+  div {
+    width: 100% !important;
+
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+}
+.slick-list {
+}
+.slick-prev:before,
+.slick-next:before {
+  opacity: 1 !important;
+  color: black !important;
+}

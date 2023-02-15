@@ -1,0 +1,40 @@
+.slider_container {
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 80%;
+  .card {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    // width: 280px !important;
+    // height: 158px !important;
+    margin: 0 20px !important;
+    box-sizing: border-box;
+
+    overflow: hidden;
+    img {
+      width: 100% !important;
+      transition: 1s;
+    }
+    a {
+      text-transform: uppercase;
+      padding: 10px;
+      background-color: #0088cc;
+      color: #fff;
+      width: auto;
+      text-align: center;
+      display: none;
+      transition: display 0.8s ease-in-out;
+      position: absolute;
+      max-width: 240px;
+    }
+    &:hover {
+      img {
+        transform: scale(1.2);
+      }
+      a {
+        display: block;
+      }
+    }
+  }
+}
