@@ -1,4 +1,8 @@
 import Banner from '@/components/Banner';
+import DoneProjects from '@/components/vacuum/DoneProjects/DoneProjects';
+import Possibilities from '@/components/vacuum/Possibilities/Possibilities';
+import StagesLeft from '@/components/Vacuum/StagesLeft/StagesLeft';
+import StagesRight from '@/components/Vacuum/StagesRight/StagesRight';
 import React from 'react';
 
 const Vacuum = () => {
@@ -8,6 +12,10 @@ const Vacuum = () => {
         title="Литье пластика в силиконовые формы"
         description="Производство мелкосерийных партий по образцу или 3D-модели"
       />
+      <Possibilities />
+      <DoneProjects />
+      <StagesLeft />
+      <StagesRight />
     </div>
   );
 };
