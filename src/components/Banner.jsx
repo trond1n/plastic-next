@@ -7,14 +7,12 @@ const items = [
   { id: 2, text: 'срок производства от 3 дней', imgPath: 'ic2-1.png' },
   { id: 3, text: 'цвета по каталогу RAL', imgPath: 'ic3-1.png' },
 ];
-const Banner = () => {
+const Banner = ({ title, description }) => {
   return (
     <div className={styles.banner}>
       <div className={styles.container}>
-        <h2>Мелкосерийное литье изделий из пластика</h2>
-        <p>
-          Производство деталей методом вакуумного литья в силиконовые формы по образцу или 3D-модели
-        </p>
+        <h2>{title}</h2>
+        <p>{description}</p>
         <div className={styles.items}>
           {items.map((item, index) => (
             <div key={index} className={styles.item}>

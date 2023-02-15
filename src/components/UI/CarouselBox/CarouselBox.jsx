@@ -3,31 +3,32 @@ import React, { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Image from 'next/image';
 const data = [
   {
     id: 1,
     title: 'узи для лазертаг',
-    image: 'https://ortoplast.ru/wp-content/uploads/2019/04/foto1.jpg',
+    image: '/images/slider/1.jpg',
   },
   {
     id: 2,
     title: 'КОРПУС ПРИБОРА',
-    image: 'https://ortoplast.ru/wp-content/uploads/2019/04/korpus-1.jpg',
+    image: '/images/slider/2.jpg',
   },
   {
     id: 3,
     title: 'КОРПУС ПРИБОРА',
-    image: 'https://ortoplast.ru/wp-content/uploads/2019/04/foto2.jpg',
+    image: '/images/slider/3.jpg',
   },
   {
     id: 4,
     title: 'МАКЕТ МЕТЕОРОЛОГИЧЕСКОГО ОБОРУДОВАНИЯ',
-    image: 'https://ortoplast.ru/wp-content/uploads/2019/04/foto3.jpg',
+    image: '/images/slider/4.jpg',
   },
   {
     id: 5,
     title: 'USB-НАКЛАДКА',
-    image: 'https://ortoplast.ru/wp-content/uploads/2019/04/USBGLAV-1.jpg',
+    image: '/images/slider/5.jpg',
   },
 ];
 const CarouselBox = () => {
@@ -74,7 +75,7 @@ const CarouselBox = () => {
         {data.map((i) => {
           return (
             <div key={i.id} className={styles.card}>
-              <img src={i.image} />
+              <Image src={i.image} width={280} height={158} />
               <a>{i.title}</a>
             </div>
           );

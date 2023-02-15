@@ -8,7 +8,12 @@ import 'slick-carousel/slick/slick-theme.css';
 const Home = () => {
   return (
     <div>
-      <Banner />
+      <Banner
+        title="Мелкосерийное литье изделий из пластика"
+        description="Производство деталей методом вакуумного
+литья в силиконовые формы по образцу
+или 3D-модели"
+      />
       <Services />
       <About />
       <DoneProjects />
