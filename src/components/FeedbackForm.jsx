@@ -1,13 +1,7 @@
-// import Image from 'next/image';
 import React from 'react';
 import styles from '../styles/FeedbackForm.module.scss';
-// import Button from './UI/Button/Button';
 import classNames from 'classnames';
-const items = [
-  { id: 1, text: 'от 1 до 1000 штук', imgPath: 'ic1-1.png' },
-  { id: 2, text: 'срок производства от 3 дней', imgPath: 'ic2-1.png' },
-  { id: 3, text: 'цвета по каталогу RAL', imgPath: 'ic3-1.png' },
-];
+
 const FeedbackForm = () => {
   return (
     <div className={styles.form}>
