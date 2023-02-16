@@ -1,7 +1,8 @@
 import Banner from '@/components/Banner';
 import FeedbackForm from '@/components/FeedbackForm';
-import DoneProjects from '@/components/vacuum/DoneProjects/DoneProjects';
-import Possibilities from '@/components/vacuum/Possibilities/Possibilities';
+import DoneProjects from '@/components/Vacuum/DoneProjects';
+import Possibilities from '@/components/Vacuum/Possibilities';
+
 import StagesLeft from '@/components/Vacuum/StagesLeft/StagesLeft';
 import StagesRight from '@/components/Vacuum/StagesRight/StagesRight';
 import React from 'react';
