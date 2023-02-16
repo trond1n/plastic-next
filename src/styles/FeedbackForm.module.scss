@@ -1,91 +1,85 @@
 .form {
-  background: linear-gradient(to right, #1d43ea 0%, #4693eb 100%);
-  font-size: 12px;
-  display: flex;
-  min-height: 100vh;
-  button,
-  input {
-    font-weight: 700;
-    letter-spacing: 1.4px;
-  }
-  .container {
-    flex: 0 1 700px;
-    margin: auto;
-    padding: 10px;
-    .screen {
-      position: relative;
-      background: #3e3e3e;
-      border-radius: 15px;
-      .screen-body {
-        display: flex;
-      }
-      .screen-body-item {
-        flex: 1;
-        padding: 50px;
-        .app-title {
-          display: flex;
-          flex-direction: column;
-          position: relative;
-          color: #ea1d6f;
-          font-size: 26px;
-        }
-
-        .app-title:after {
-          content: '';
-          display: block;
-          position: absolute;
-          left: 0;
-          bottom: -10px;
-          width: 25px;
-          height: 4px;
-          background: #ea1d6f;
-        }
-
-        .app-contact {
-          margin-top: auto;
-          font-size: 8px;
-          color: #888;
-        }
-      }
-      .screen-body-item.left {
-        display: flex;
-        flex-direction: column;
-      }
-    }
-    .screen:after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 20px;
-      right: 20px;
-      bottom: 0;
-      border-radius: 15px;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-      z-index: -1;
-    }
-  }
+  padding: 50px 0;
+  background-color: #f5f5f5;
+}
+.container {
+  max-width: 80%;
+  margin: auto;
 }
 
-.app-form-group {
+.screen {
+  margin: auto;
+  max-width: 90%;
+  background: #4b80b3;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.screen_body {
+  display: flex;
+}
+
+.screen_body_item {
+  flex: 1;
+  padding: 50px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+.right {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+  background: #386085;
+}
+
+.app_title {
+  display: flex;
+  flex-direction: column;
+  color: #f3f3f3;
+  font-size: 50px;
+}
+
+// .app_title:after {
+//   content: '';
+//   display: block;
+//   position: absolute;
+//   left: 0;
+//   bottom: -10px;
+//   width: 100px;
+//   height: 4px;
+//   border-radius: 100px;
+//   background: #f5f5f5;
+// }
+
+.app_contact {
+  margin-top: auto;
+  font-size: 14px;
+  color: #c5c4c4;
+  max-width: 95%;
+}
+
+.app_form_group {
   margin-bottom: 15px;
 }
 
-.app-form-group.message {
+.message {
   margin-top: 40px;
 }
 
-.app-form-group.buttons {
+.buttons {
   margin-bottom: 0;
   text-align: right;
 }
 
-.app-form-control {
+.app_form_control {
   width: 100%;
   padding: 10px 0;
   background: none;
   border: none;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #f5f5f5;
   color: #ddd;
   font-size: 14px;
   text-transform: uppercase;
@@ -93,80 +87,24 @@
   transition: border-color 0.2s;
 }
 
-.app-form-control::placeholder {
-  color: #666;
+.app_form_control::placeholder {
+  color: rgb(199, 199, 199);
 }
 
-.app-form-control:focus {
+.app_form_control:focus {
   border-bottom-color: #ddd;
 }
 
-.app-form-button {
+.app_form_button {
+  margin: 10px 20px;
   background: none;
   border: none;
-  color: #ea1d6f;
-  font-size: 14px;
+  color: #ffffff;
+  font-size: 26px;
   cursor: pointer;
   outline: none;
 }
 
-.app-form-button:hover {
-  color: #b9134f;
-}
-
-.credits {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  color: #ffa4bd;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-}
-
-.credits-link {
-  display: flex;
-  align-items: center;
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.dribbble {
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-}
-
-@media screen and (max-width: 520px) {
-  .screen-body {
-    flex-direction: column;
-  }
-
-  .screen-body-item.left {
-    margin-bottom: 30px;
-  }
-
-  .app-title {
-    flex-direction: row;
-  }
-
-  .app-title span {
-    margin-right: 12px;
-  }
-
-  .app-title:after {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .screen-body {
-    padding: 40px;
-  }
-
-  .screen-body-item {
-    padding: 0;
-  }
+.app_form_button:hover {
+  color: #bebebe;
 }

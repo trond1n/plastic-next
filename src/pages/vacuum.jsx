@@ -1,4 +1,5 @@
 import Banner from '@/components/Banner';
+import FeedbackForm from '@/components/FeedbackForm';
 import DoneProjects from '@/components/vacuum/DoneProjects/DoneProjects';
 import Possibilities from '@/components/vacuum/Possibilities/Possibilities';
 import StagesLeft from '@/components/Vacuum/StagesLeft/StagesLeft';
@@ -16,6 +17,9 @@ const Vacuum = () => {
       <DoneProjects />
       <StagesLeft />
       <StagesRight />
+      <StagesLeft />
+      <StagesRight />
+      <FeedbackForm />
     </div>
   );
 };

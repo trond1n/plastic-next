@@ -1,7 +1,8 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import React from 'react';
 import styles from '../styles/FeedbackForm.module.scss';
-import Button from './UI/Button/Button';
+// import Button from './UI/Button/Button';
+import classNames from 'classnames';
 const items = [
   { id: 1, text: 'от 1 до 1000 штук', imgPath: 'ic1-1.png' },
   { id: 2, text: 'срок производства от 3 дней', imgPath: 'ic2-1.png' },
@@ -13,33 +14,33 @@ const FeedbackForm = () => {
       <div className={styles.container}>
         <div className={styles.screen}>
           <div className={styles.screen_body}>
-            <div class="screen-body-item left">
-              <div class="app-title">
+            <div className={classNames(styles.screen_body_item, styles.left)}>
+              <div className={styles.app_title}>
                 <span>Узнать цену и </span>
                 <span>сроки изготовления</span>
               </div>
-              <div class="app-contact">
-                Для расчета стоимости изготовления вашего заказа вы можете заполнить форму и
-                прикрепить файл Мы свяжемся с вами в течение 3 рабочих часов
+              <div className={styles.app_contact}>
+                Для расчета стоимости изготовления вашего заказа вы можете заполнить форму. Мы
+                свяжемся с вами в течение 3 рабочих часов
               </div>
             </div>
-            <div class="screen-body-item">
-              <div class="app-form">
-                <div class="app-form-group">
-                  <input class="app-form-control" placeholder="ФИО" />
+            <div className={classNames(styles.screen_body_item, styles.right)}>
+              <div className={styles.app_form}>
+                <div className={styles.app_form_group}>
+                  <input className={styles.app_form_control} placeholder="ФИО" />
                 </div>
-                <div class="app-form-group">
-                  <input class="app-form-control" placeholder="EMAIL" />
+                <div className={styles.app_form_group}>
+                  <input className={styles.app_form_control} placeholder="EMAIL" />
                 </div>
-                <div class="app-form-group">
-                  <input class="app-form-control" placeholder="CONTACT NO" />
+                <div className={styles.app_form_group}>
+                  <input className={styles.app_form_control} placeholder="Номер телефона" />
                 </div>
-                <div class="app-form-group message">
-                  <input class="app-form-control" placeholder="MESSAGE" />
+                <div className={classNames(styles.app_form_group, styles.message)}>
+                  <input className={styles.app_form_control} placeholder="Сообщение" />
                 </div>
-                <div class="app-form-group buttons">
-                  <button class="app-form-button">ОТМЕНА</button>
-                  <button class="app-form-button">ОТПРАВИТЬ</button>
+                <div className={classNames(styles.app_form_group, styles.buttons)}>
+                  <button className={styles.app_form_button}>ОТМЕНА</button>
+                  <button className={styles.app_form_button}>ОТПРАВИТЬ</button>
                 </div>
               </div>
             </div>
