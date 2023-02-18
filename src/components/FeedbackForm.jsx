@@ -33,7 +33,6 @@ const FeedbackForm = () => {
                   <input className={styles.app_form_control} placeholder="Сообщение" />
                 </div>
                 <div className={classNames(styles.app_form_group, styles.buttons)}>
-                  <button className={styles.app_form_button}>ОТМЕНА</button>
                   <button className={styles.app_form_button}>ОТПРАВИТЬ</button>
                 </div>
               </div>
