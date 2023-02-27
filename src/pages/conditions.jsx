@@ -1,6 +1,5 @@
 import ConditionsBlock from '@/components/Conditions/ConditionsBlock';
 import BlockTitle from '@/components/UI/BlockTitle/BlockTitle';
-import React from 'react';
 
 const OrderСonditions = () => {
   return (

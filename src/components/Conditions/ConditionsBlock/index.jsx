@@ -1,6 +1,4 @@
-import BlockTitle from '@/components/UI/BlockTitle/BlockTitle';
 import Button from '@/components/UI/Button/Button';
-import Image from 'next/image';
 import styles from './ConditionsBlock.module.scss';
 
 const ConditionsBlock = ({ conditions, title }) => {

@@ -1,9 +1,11 @@
+import BlockTitle from '@/components/UI/BlockTitle/BlockTitle';
 import Image from 'next/image';
 import styles from './Possibilities.module.scss';
 const Possibilities = () => {
   return (
     <div className={styles.possibilities}>
       <div className={styles.container}>
+        <BlockTitle title="Возможности технологии литья в силикон" />
         <div className={styles.info}>
           <div className={styles.image}>
             <Image src="/images/lasertag.png" width={524} height={419} alt="lasertag" />

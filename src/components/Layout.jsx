@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <Sticky enabled={true} top={0}>
+      <Sticky enabled={true} top={0} innerZ={9999}>
         <Navbar />
       </Sticky>
 

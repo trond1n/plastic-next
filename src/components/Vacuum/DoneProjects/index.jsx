@@ -55,12 +55,13 @@ const DoneProjects = () => {
             return (
               <div key={i.id} className={styles.card}>
                 <Image src={i.image} width={292} height={275} alt="done project" />
-                <a>{i.title}</a>
+                <div className={styles.text}>
+                  <a>{i.title}</a>
+                </div>
               </div>
             );
           })}
         </div>
-        <BlockTitle title="Этапы производства" />
       </div>
     </div>
   );
