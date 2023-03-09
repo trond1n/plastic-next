@@ -40,7 +40,6 @@ const Contacts = () => {
           allowfullscreen="true"
           style={{ position: 'relative' }}></iframe>
       </div>
-      <FeedbackForm />
     </div>
   );
 };

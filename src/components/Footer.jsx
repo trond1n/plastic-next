@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <div className={styles.lists}>
+        {/* <div className={styles.lists}>
           <ul>
             <li>
               <h3>Название</h3>
@@ -29,7 +29,7 @@ const Footer = () => {
               <li>Условия заказа</li>
             </ul>
           </div>
-        </div>
+        </div> */}
         <div className={styles.info}>
           <h3>OOO Opтопласт, 2023</h3>
           <p>Создание и продвижение сайтов</p>

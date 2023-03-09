@@ -13,6 +13,7 @@
   background: #4b80b3;
   border-radius: 15px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
 }
 
 .screen_body {
@@ -27,6 +28,8 @@
 .left {
   display: flex;
   flex-direction: column;
+  background: url(/images/intro-bg.jpg);
+  background-size: cover;
 }
 .right {
   border-top-right-radius: 15px;
