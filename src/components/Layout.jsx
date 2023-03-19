@@ -18,6 +18,7 @@ const Layout = ({ children }) => {
 
       {children}
       <FeedbackForm />
+      {/* <Footer /> */}
     </>
   );
 };

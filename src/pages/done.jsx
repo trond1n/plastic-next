@@ -52,7 +52,6 @@ const Done = () => {
         <BlockTitle title="ВЫПОЛНЕННЫЕ РАБОТЫ" />
         <Gallery data={data} />
       </div>
-      <FeedbackForm />
     </div>
   );
 };

@@ -1,68 +1,69 @@
-import styles from './CarouselBox.module.scss';
-import React, { useState } from 'react';
-import Slider from 'react-slick';
-
+import 'swiper/css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Mousewheel, Pagination } from 'swiper';
 import Image from 'next/image';
 
 const CarouselBox = () => {
-  const settings = {
-    arrows: false,
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
-  };
-
   return (
-    <div className={styles.container}>
-      <Slider {...settings}>
-        <div className={styles.item}>
-          <div className={styles.info}>
-            <h3>Узи для лазертага</h3>
-            <button>Подробнее</button>
-          </div>
-          <Image src="/images/slider/1.jpg" width={341} height={192} alt="pic" />
+    <Swiper
+      loop={true}
+      direction={'vertical'}
+      spaceBetween={30}
+      mousewheel={true}
+      pagination={{
+        el: '.pagination',
+        clickable: true,
+      }}
+      modules={[Mousewheel, Pagination]}
+      className="blog-slider">
+      <SwiperSlide className="blog-slider__item swiper-slide">
+        <div className="blog-slider__img">
+          <Image src="/images/slider/stvol.jpg" alt="pushka" width={300} height={300} />
         </div>
-        <div className={styles.item}>
-          <div className={styles.info}>
-            <h3>Узи для лазертага</h3>
-            <button>Подробнее</button>
-          </div>
-          <Image src="/images/slider/1.jpg" width={341} height={192} alt="pic" />
+        <div className="blog-slider__content">
+          <span className="blog-slider__code">26 December 2022</span>
+          <div className="blog-slider__title">Узи для лазертага</div>
+          <div className="blog-slider__text">Печать УЗИ для лазертага</div>
+          <a href="#" className="blog-slider__button">
+            ПОДРОБНЕЕ
+          </a>
         </div>
-        <div className={styles.item}>
-          <div className={styles.info}>
-            <h3>Узи для лазертага</h3>
-            <button>Подробнее</button>
-          </div>
-          <Image src="/images/slider/1.jpg" width={341} height={192} alt="pic" />
+      </SwiperSlide>
+      <SwiperSlide className="blog-slider__item swiper-slide">
+        <div className="blog-slider__img">
+          <Image src="/images/slider/stvol.jpg" alt="pushka" width={300} height={300} />
         </div>
-        <div className={styles.item}>
-          <div className={styles.info}>
-            <h3>Узи для лазертага</h3>
-            <button>Подробнее</button>
+        <div className="blog-slider__content">
+          <span className="blog-slider__code">27 December 2022</span>
+          <div className="blog-slider__title">Lorem Ipsum Dolor</div>
+          <div className="blog-slider__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate
+            repellendus magni illo ea animi?
           </div>
-          <Image src="/images/slider/1.jpg" width={341} height={192} alt="pic" />
+          <a href="#" className="blog-slider__button">
+            ПОДРОБНЕЕ
+          </a>
         </div>
-        <div className={styles.item}>
-          <div className={styles.info}>
-            <h3>Узи для лазертага</h3>
-            <button>Подробнее</button>
+      </SwiperSlide>
+      <SwiperSlide className="blog-slider__item swiper-slide">
+        <div className="blog-slider__img">
+          <Image src="/images/slider/stvol.jpg" alt="pushka" width={300} height={300} />
+        </div>
+        <div className="blog-slider__content">
+          <span className="blog-slider__code">28 December 2022</span>
+          <div className="blog-slider__title">Lorem Ipsum Dolor</div>
+          <div className="blog-slider__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate
+            repellendus magni illo ea animi?
           </div>
-          <Image src="/images/slider/1.jpg" width={341} height={192} alt="pic" />
+          <a href="#" className="blog-slider__button">
+            ПОДРОБНЕЕ
+          </a>
         </div>
-        <div className={styles.item}>
-          <div className={styles.info}>
-            <h3>Узи для лазертага</h3>
-            <button>Подробнее</button>
-          </div>
-          <Image src="/images/slider/1.jpg" width={341} height={192} alt="pic" />
-        </div>
-      </Slider>
-    </div>
+      </SwiperSlide>
+
+      <div className="pagination"></div>
+    </Swiper>
   );
 };
 
