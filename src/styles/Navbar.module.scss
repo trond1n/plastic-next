@@ -12,6 +12,26 @@
     overflow: hidden;
     font-size: 24px;
     color: #0b6cde;
+    @media screen and (max-width: 1080px) {
+      padding: 20px 20px;
+      font-size: 18px;
+    }
+    @media screen and (max-width: 630px) {
+      padding: 15px 10px;
+      font-size: 14px;
+    }
+    @media screen and (max-width: 446px) {
+      padding: 10px 10px;
+      font-size: 12px;
+    }
+    @media screen and (max-width: 400px) {
+      padding: 10px 5px;
+      font-size: 12px;
+    }
+    @media screen and (max-width: 350px) {
+      padding: 10px 5px;
+      font-size: 10px;
+    }
   }
   a:after {
     content: '';

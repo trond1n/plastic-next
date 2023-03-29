@@ -6,6 +6,13 @@
     text-align: center;
 
     width: 50%;
+    @media screen and (max-width: 1440px) {
+      width: 60%;
+    }
+    @media screen and (max-width: 1152px) {
+      width: 90%;
+      padding: 50px 0;
+    }
     h2 {
       color: #fff;
       font-size: 65px;
@@ -13,6 +20,12 @@
       text-transform: uppercase;
       margin-top: 0;
       margin-bottom: 10px;
+      @media screen and (max-width: 768px) {
+        font-size: 45px;
+      }
+      @media screen and (max-width: 470px) {
+        font-size: 28px;
+      }
     }
     p {
       color: #fff;
@@ -21,11 +34,17 @@
       line-height: 30px;
       margin: 0 auto;
       margin-bottom: 60px;
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+      }
     }
     .items {
       margin: auto;
       display: flex;
       justify-content: space-between;
+      @media screen and (max-width: 565px) {
+        display: none;
+      }
     }
   }
 }

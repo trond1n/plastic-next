@@ -41,11 +41,21 @@ a {
   border-radius: 25px !important;
   height: 400px !important;
   transition: all 0.3s !important;
+  @media screen and (max-width: 800px) {
+    height: 300px !important;
+
+    width: 90% !important;
+    padding: 10px !important;
+    margin: 20px auto !important;
+  }
 }
 
 .blog-slider__item {
   display: flex !important;
   align-items: center !important;
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+  }
 }
 
 .blog-slider__item.swiper-slide-active .blog-slider__img img {
@@ -112,6 +122,11 @@ a {
   /* transform: translateX(-80px)!important; */
   overflow: hidden !important;
   margin-right: 40px !important;
+  @media screen and (max-width: 800px) {
+    width: 150px !important;
+    height: 150px !important;
+    margin-right: 0 !important;
+  }
 }
 .blog-slider__img:after {
   content: '' !important;
@@ -124,6 +139,10 @@ a {
   /* background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%)!important; */
   border-radius: 20px !important;
   opacity: 0.8 !important;
+  @media screen and (max-width: 800px) {
+    width: 150px !important;
+    height: 150px !important;
+  }
 }
 .blog-slider__img img {
   width: 100% !important;
@@ -137,6 +156,11 @@ a {
 
 .blog-slider__content {
   padding-right: 25px !important;
+  @media screen and (max-width: 800px) {
+    padding-right: 0 !important;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .blog-slider__content > * {
@@ -149,17 +173,28 @@ a {
   margin-bottom: 15px !important;
   display: block !important;
   font-weight: 500 !important;
+  @media screen and (max-width: 800px) {
+    display: none !important;
+  }
 }
 .blog-slider__title {
   font-size: 24px !important;
   font-weight: 700 !important;
   color: #0d0925 !important;
   margin-bottom: 20px !important;
+  @media screen and (max-width: 800px) {
+    margin: 20px 0 !important;
+    font-size: 18px !important;
+    text-align: center;
+  }
 }
 .blog-slider__text {
   color: #4e4a67 !important;
   margin-bottom: 30px !important;
   line-height: 1.5em !important;
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
 }
 .blog-slider__button {
   display: inline-flex !important;

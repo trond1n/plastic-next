@@ -4,6 +4,15 @@
   font-size: 36px;
   color: #0b6cde;
   margin: 0;
+  @media screen and (max-width: 1152px) {
+    font-size: 28px;
+  }
+  @media screen and (max-width: 520px) {
+    font-size: 24px;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 16px;
+  }
 }
 .line {
   margin-left: 20px;
