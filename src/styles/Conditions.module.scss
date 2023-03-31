@@ -1,0 +1,46 @@
+.conditions {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+  @media screen and (max-width: 1024px) {
+    max-width: 90%;
+  }
+  p {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .red {
+    color: #bf0000;
+    font-size: 18px;
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+  .thin {
+    font-size: 15px;
+    padding-top: 80px;
+    @media screen and (max-width: 1024px) {
+      padding-top: 20px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+  .bold {
+    max-width: 70%;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0 auto;
+    padding-top: 20px;
+    @media screen and (max-width: 1024px) {
+      max-width: 90%;
+
+      padding-top: 20px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+}
+
+//text-align: justify;

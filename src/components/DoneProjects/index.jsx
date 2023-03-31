@@ -1,7 +1,6 @@
-import Image from 'next/image';
-import styles from '../styles/DoneProjects.module.scss';
-import BlockTitle from './UI/BlockTitle/BlockTitle';
-import CarouselBox from './UI/CarouselBox/CarouselBox';
+import BlockTitle from '../UI/BlockTitle/BlockTitle';
+import CarouselBox from '../UI/CarouselBox/CarouselBox';
+import styles from './DoneProjects.module.scss';
 
 const DoneProjects = () => {
   return (

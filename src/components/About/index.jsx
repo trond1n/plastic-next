@@ -1,7 +1,6 @@
 import Image from 'next/image';
-import styles from '../styles/About.module.scss';
-import BlockTitle from './UI/BlockTitle/BlockTitle';
-import Button from './UI/Button/Button';
+import BlockTitle from '../UI/BlockTitle/BlockTitle';
+import styles from './About.module.scss';
 const About = () => {
   return (
     <div className={styles.about}>

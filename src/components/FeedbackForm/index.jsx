@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/FeedbackForm.module.scss';
+import styles from './FeedbackForm.module.scss';
 import classNames from 'classnames';
 
 const FeedbackForm = () => {

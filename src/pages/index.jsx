@@ -1,11 +1,8 @@
-import Services from '@/components/Services';
+import Banner from '@/components/Banner';
+import Services from '@/components/Servises';
 import About from '@/components/About';
 import DoneProjects from '@/components/DoneProjects';
-import Banner from '@/components/Banner';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import Contacts from './contacts';
-
 const Home = () => {
   return (
     <div>

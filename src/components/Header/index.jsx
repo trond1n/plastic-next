@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import styles from '../styles/Navbar.module.scss';
+import styles from './Header.module.scss';
 
 const navigation = [
   { id: 1, title: 'Главная', path: '/' },
@@ -9,7 +9,7 @@ const navigation = [
   { id: 6, title: 'Контакты', path: '/contacts' },
 ];
 
-const Navbar = () => {
+const Header = () => {
   const { pathname } = useRouter();
 
   return (
@@ -25,4 +25,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;

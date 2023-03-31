@@ -1,6 +1,7 @@
 import FeedbackForm from '@/components/FeedbackForm';
 import BlockTitle from '@/components/UI/BlockTitle/BlockTitle';
 import styles from '@/styles/Contacts.module.scss';
+import Link from 'next/link';
 const Contacts = () => {
   return (
     <div className={styles.contacts}>
@@ -13,14 +14,16 @@ const Contacts = () => {
           </div>
           <div className={styles.item}>
             <h4>Телефон</h4>
-            <a href="tel:+78452320105">+7 (8452) 32 01 05</a>
+            <Link href="tel:+78452320105">+7 (8452) 32 01 05</Link>
           </div>
           <div className={styles.item}>
             <h4>email</h4>
-            <a href="mailto:info@ortoplast.ru">info@ortoplast.ru</a>
+            <Link href="mailto:info@ortoplast.ru">info@ortoplast.ru</Link>
           </div>
         </div>
       </div>
+
+      {/* модуль яндекс карт */}
       <div style={{ position: 'relative', overflow: 'hidden' }}>
         <a
           href="https://yandex.ru/maps/194/saratov/?utm_medium=mapframe&utm_source=maps"

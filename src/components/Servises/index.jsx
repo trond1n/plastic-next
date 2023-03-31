@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import styles from '../styles/Services.module.scss';
-import BlockTitle from './UI/BlockTitle/BlockTitle';
-import Button from './UI/Button/Button';
+import BlockTitle from '../UI/BlockTitle/BlockTitle';
+import styles from './Services.module.scss';
+
 const Services = () => {
   const items = [
     {
@@ -44,7 +44,6 @@ const Services = () => {
                 {item.text.map((text, index) => (
                   <p key={index}>{text}</p>
                 ))}
-                <Button title="Подробнее" />
               </div>
             );
           })}
