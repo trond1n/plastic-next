@@ -27,9 +27,18 @@
           }
         }
         p {
-          font-size: 18px;
+          font-size: 34px;
           font-weight: 500;
           color: #292e3a;
+          @media screen and (max-width: 1245px) {
+            font-size: 28px;
+          }
+          @media screen and (max-width: 1104px) {
+            font-size: 22px;
+          }
+          @media screen and (max-width: 1000px) {
+            font-size: 18px;
+          }
         }
         a {
           font-size: 34px;

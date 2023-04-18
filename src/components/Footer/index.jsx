@@ -18,11 +18,11 @@ const Footer = () => {
             </li>
           </ul>
           <div className={styles.contacts}>
-            <Link href="tel:+78452320105">+7 (8452) 32 01 05</Link>
-            <Link href="mailto:info@ortoplast.ru">info@ortoplast.ru</Link>
+            <Link href="tel:+78452320105">+7 (800) 555 35 35</Link>
+            <Link href="mailto:info@m2m.ru">info@m2m.ru</Link>
           </div>
         </div>
-        <p className={styles.copyright}>© Ortoplast, 2023</p>
+        <p className={styles.copyright}>© M2M, 2023</p>
       </div>
     </footer>
   );
